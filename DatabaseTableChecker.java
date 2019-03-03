@@ -17,7 +17,6 @@ Separate each table name by a space or update the regex in createSetList to look
 public class DatabaseTableChecker {
 
     public static String getTables(String filepath) throws Exception {
-        //In file, separate tables by a space
         File file = new File(filepath);
         Scanner in = new Scanner(file);
 
