@@ -3,14 +3,19 @@ import java.util.Scanner;
 import java.util.HashSet;
 import java.util.Set;
 
+/*
+Used to check required tables v.s the actual tables available in a database.
+To utilize on the command line, call the script and give two file paths as arguments
+    
+Example:
+java DatabaseTableChecker.java <required_tables_file_path> <database_tables_file_path>
+java DatabaseTableChecker.java /Users/jordaneelmore/Documents/Doc2/test_ps_checker_file.txt /Users/jordaneelmore/Documents/Doc2/database_tables.txt.
+    
+Separate each table name by a space or update the regex in createSetList to look for another delimiter
+*/
+
 public class DatabaseTableChecker {
 
-    /*
-    Used to check required peoplesoft tables v.s the actual tables available in
-    peoplesoft. To use the function enter the list of tables available and it will
-    automatically compare them against what we need and return the tables needed
-    to confirm data access.
-     */
     public static String getTables(String filepath) throws Exception {
         //In file, separate tables by a space
         File file = new File(filepath);
