@@ -14,7 +14,7 @@ java DatabaseTableChecker.java /Users/jordaneelmore/Documents/Doc2/test_ps_check
 Separate each table name by a space or update the regex in createSetList to look for another delimiter
 */
 
-public class DatabaseTableChecker {
+public class FileTableChecker {
 
     public static String getTables(String filepath) throws Exception {
         File file = new File(filepath);
